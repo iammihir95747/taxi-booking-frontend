@@ -6,7 +6,6 @@ const API_BASE = "http://localhost:5001";
 
 const Register = () => {
   const [searchparams] = useSearchParams();
-  // Check if 'role' is passed through the URL query params, otherwise default to 'user'
   const roleFromURL = searchparams.get('role') || 'user'; 
 
   const [formData, setFormData] = useState({

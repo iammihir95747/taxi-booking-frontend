@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-route
 import Navbar from './Components/Pages/Navbar.jsx';
 import Register from './Components/Auth/Regiter.jsx';
 import Login from './Components/Auth/Login.jsx';
+import Bookings from './Components/Pages/Bookings.jsx';
 
 
 function Layout() {
@@ -16,7 +17,7 @@ function Layout() {
                 <Route path="/" element={<Navbar />} />
                 <Route path="/register" element={<Register />} />
                 <Route path="/login" element={<Login />} />
-                
+                 <Route path='/bookings' element={<Bookings />}></Route>
             </Routes>
         </>
     );
